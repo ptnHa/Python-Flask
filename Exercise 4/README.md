@@ -2,7 +2,7 @@ Run these commands to check the website:
 
 1. Activate virtual environment
     For cmd:        venv\Scripts\activate.bat
-    For bash:       venv/bin/activate
+    For bash:       source venv/bin/activate
 
 2. Install environment
     pip install -e .
