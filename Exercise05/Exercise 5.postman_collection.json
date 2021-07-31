@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "37257103-18a4-40c3-9bcd-d59671f58418",
+		"name": "Exercise 5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/employee/get",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "birth_date",
+							"value": "1996-05-24",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Hoang",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Tran",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "HoangTH106.png",
+							"type": "text"
+						},
+						{
+							"key": "notes",
+							"value": "A Data Engineer fresher",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/employee/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"employee",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "CustomerName",
+							"value": "Hoang Tran",
+							"type": "text"
+						},
+						{
+							"key": "ContactName",
+							"value": "Hoang",
+							"type": "text"
+						},
+						{
+							"key": "Address",
+							"value": "Phu Do, Nam Tu Liem, Hanoi",
+							"type": "text"
+						},
+						{
+							"key": "City",
+							"value": "Hanoi",
+							"type": "text"
+						},
+						{
+							"key": "PostalCode",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "Country",
+							"value": "Vietnam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/customer/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/customer/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
